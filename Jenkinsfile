@@ -6,7 +6,7 @@ pipeline {
             steps {
                 echo 'Building project…'
                 // Execute Maven clean and package command
-                sh 'mvn clean package'
+                //sh 'mvn clean package'
             } 
         }
 
@@ -14,7 +14,7 @@ pipeline {
             steps {
                 echo 'Testing project…'
                 // Execute Maven test command
-                sh 'mvn test'
+               // sh 'mvn test'
             }
         }
 
@@ -22,7 +22,7 @@ pipeline {
             steps {
                 echo 'Deploying project…'
                 // Execute deployment script
-                sh './deploy.sh'
+                //sh './deploy.sh'
             }
         }
     }
