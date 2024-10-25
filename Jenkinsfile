@@ -1,4 +1,4 @@
-create maven jenkins file for this pipeline {
+pipeline {
     agent any
 
     stages {
