@@ -5,25 +5,25 @@ pipeline {
         stage('Build stage') {
             steps {
                 echo 'Building project…'
-                // Add actual build commands here, e.g., 
-                // sh 'mvn clean package'
+                // Execute Maven clean and package command
+                sh 'mvn clean package'
             } 
         }
 
         stage('Test stage') {
             steps {
                 echo 'Testing project…'
-                // Add actual test commands here, e.g.,
-                // sh 'mvn test'
+                // Execute Maven test command
+                sh 'mvn test'
             }
         }
 
         stage('Deploy stage') {
             steps {
                 echo 'Deploying project…'
-                // Add actual deployment commands here, e.g.,
-                // sh 'deploy.sh'
+                // Execute deployment script
+                sh './deploy.sh'
             }
-        }
-    }
+        }
+    }
 }
